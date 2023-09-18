@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var pubkey = document.createElement('div');
         pubkey.className = 'card-pubkey';
-        pubkey.textContent = `Pubkey: ` + pubkeyBase32;
+        pubkey.textContent = `Pubkey: ` + pubkeyBase32.slice(0,16) + '...';
         card.appendChild(pubkey);
 
         var button = document.createElement('button');

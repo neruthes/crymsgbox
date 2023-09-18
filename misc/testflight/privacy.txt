@@ -1,0 +1,28 @@
+Privacy Policy
+
+
+This Privacy Policy ("Policy") is a legal agreement between you ("End User" or "you") and Neruthes ("Developer", "I", "me", or "my") governing your use of my software application ("Software").
+
+1.  Personal Information
+
+I do not collect, store, use, or share any information, personal or otherwise, through the Software. The Software does not require any personal information to function, and I do not have access to any data you interact with while using the Software.
+
+2.  Non-Personal Information
+
+The Software does not collect, store, use, or share any non-personal information.
+
+3.  Third Party Services
+
+The Software does not include any third party services that may collect information about you.
+
+4.  Data Storage and Transfer
+
+Since the Software does not collect any information, there is no data storage or transfer occurring related to the Software.
+
+5.  Changes to This Privacy Policy
+
+I may update this Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted.
+
+By downloading, installing, or using the Software, you acknowledge that you have read, understood, and agree to the terms of this Policy.
+
+Last updated: 2023-09-18

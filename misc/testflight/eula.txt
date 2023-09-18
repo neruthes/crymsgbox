@@ -1,0 +1,40 @@
+End User License Agreement (EULA)
+
+
+This End User License Agreement ("Agreement") is a legal agreement between you ("End User" or "you") and Neruthes ("Developer", "I", "me", or "my") governing your use of my software application ("Software").
+
+1.  Acceptance of Terms
+
+By downloading, installing, or using the Software, you agree to be bound by the terms of this Agreement. If you do not agree to these terms, do not download, install, or use the Software.
+
+2.  License Grant
+
+Subject to the terms of this Agreement, I grant you a non-exclusive, non-transferable, non-sublicensable, worldwide, royalty-free license to use the Software, exactly as per the terms of the GNU Affero General Public License v3.0 (AGPL-3.0). This includes the right to run, study, share, and modify the software.
+
+3.  Restrictions
+
+You agree not to, and not to permit others to, license, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose or otherwise commercially exploit the Software or make the Software available to any third party, except as expressly permitted by the AGPL-3.0.
+
+4.  Modifications
+
+You may modify your copy or copies of the Software or any portion of it, thus forming a work based on the Software, and copy and distribute such modifications or work under the terms of AGPL-3.0.
+
+5.  Termination
+
+This Agreement shall remain in effect until terminated by you or the Developer. I may, in my sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior
+notice.
+
+6.  Governing Law
+
+This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which I am located, without regard to its conflict of law provisions.
+
+7.  Entire Agreement
+
+This Agreement constitutes the entire agreement between you and me regarding your use of the Software and supersedes all prior and contemporaneous written or oral agreements between you and me.
+
+By downloading, installing, or using the Software, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement.
+
+NOTE: This EULA is intended to mimic the rights granted under the AGPL-3.0 license. For the full details of the rights, obligations, and limitations under the AGPL-3.0 license, please refer to the full text of the license, available at: https://www.gnu.org/licenses/agpl-3.0.html 
+The source code of the Software is available at "https://github.com/neruthes/crymsgbox".
+
+Last updated: 2023-09-18

@@ -38,9 +38,9 @@ html, body {
 
 .card-pubkey {
     font-size: 14px;
-    font-family: 'JetBrains Mono NL', 'JetBrains Mono', 'Inconsolata', 'Ubuntu Mono', 'Noto Sans Mono', 'Courier New', monospace;
+    font-family: 'JetBrains Mono NL', 'JetBrains Mono', 'Inconsolata', 'Ubuntu Mono', 'Noto Sans Mono', 'Roboto Mono', 'Droid Sans Mono', 'Mitype Mono Rounded', 'Cutive Mono', 'Mitype Mono VF', 'Courier New', monospace;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
 .card-button {

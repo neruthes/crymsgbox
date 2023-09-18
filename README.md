@@ -40,4 +40,6 @@ TODO
 
 Copyright (c) 2023 Neruthes. 
 
-Published with GNU AGPL 3.0.
+This software is published with GNU AGPL 3.0.
+
+Some dependencies, such as runtime libraries, are published by their respective owners and may be licensed under different terms. You must consult their respective licensing conditions.

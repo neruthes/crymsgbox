@@ -28,14 +28,19 @@ case $1 in
         # ./node_modules/.bin/webpack
         ;;
     cordova)
+        yarn
         rsync -av --delete www/ CryMsgBox/www/
         ;;
+    ios)
+        bash "$0" www cordova
+        cd CryMsgBox || exit 1
+        ../node_modules/cordova/bin/cordova build ios
+        ;;
     android)
-        bash "$0" cordova
+        bash "$0" www cordova
         cd CryMsgBox || exit 1
         ../node_modules/cordova/bin/cordova build android
         cd "$REPODIR" || exit 1
-        # find . -name "*.apk" | while read -r fn; do realpath "$fn"; done
         cp CryMsgBox/platforms/android/app/build/outputs/apk/debug/app-debug.apk _dist/CryMsgBox.apk
         ;;
     up|upload)

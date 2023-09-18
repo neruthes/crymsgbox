@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html, body {
     background: #FAFAFA;
 }
@@ -79,6 +84,6 @@ html, body {
 
 
 #tab3mailboxes {
-    min-height: 50vh;
+    min-height: 25vh;
     padding-bottom: 50px;
 }

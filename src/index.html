@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryMsgBox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Miscellaneous libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.3/nacl-fast.min.js" integrity="sha256-PsU1wASu6yJXhdjpP7M7+Z9S45m9ffwBlptWKbrqUTE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jssha@3.3.1/dist/sha.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hi-base32@0.5.1/src/base32.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.1/nacl-util.min.js" integrity="sha256-l9yVE3YPWsTD48cjI2ABjQo466SAR0oLKj1VzQOlZ1U=" crossorigin="anonymous"></script>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body class="text-gray-800 antialiased">
+    <div id="app" class="h-screen flex flex-col">
+        <!-- Tab content -->
+        <div id="tab1" class="tab-content flex-grow p-4">
+            <div>
+                <label class="mt-2" for="">Received Ciphertext</label>
+                <textarea id="input-ciphertext" placeholder="Received Ciphertext" class="w-full mb-4 inputboxvisual" style="height: 50vh;"></textarea>
+            </div>
+            <div>
+                <button id="decrypt" class="btn-block mb-4 text-white font-bold" style="background: #1e90ff;">Decrypt</button>
+            </div>
+            <div>
+                <button id="copy" class="btn-block mb-4" style="background: #FFFFFF;" disabled>Copy Output Cleartext</button>
+            </div>
+            <div>
+                <label class="mt-2" for="">Decryption Result</label>
+                <textarea id="output-cleartext" placeholder="" class="w-full mb-4 inputboxvisual" style="height: 50vh;" disabled>(Empty)</textarea>
+            </div>
+        </div>
+
+
+        <!-- Write subpage -->
+        <div id="tab2" class="tab-content flex-grow p-4 hidden">
+            <div>
+                <label class="mt-2" for="">Recipient Pubkey</label>
+                <input id="recipient" type="text" placeholder="Recipient (X25519 pubkey of the recipient)" class="w-full mb-4 inputboxvisual">
+            </div>
+            <div>
+                <label class="mt-2" for="">Message Text</label>
+                <textarea id="message" placeholder="Message Text" class="w-full mb-4 inputboxvisual" style="height: 50vh;"></textarea>
+            </div>
+            <div>
+                <button id="encrypt" class="btn-block mb-4 text-white font-bold" style="background: #1e90ff;">Encrypt</button>
+            </div>
+            <div>
+                <button id="copy" class="btn-block mb-4" style="background: #FFFFFF;" disabled>Copy Output Ciphertext</button>
+            </div>
+            <div>
+                <label class="mt-2" for="">Preview Ciphertext</label>
+                <textarea id="output-ciphertext" placeholder="" class="w-full mb-4 inputboxvisual" style="height: 50vh;" disabled>(Empty)</textarea>
+            </div>
+        </div>
+
+        <!-- Me subpage -->
+        <div id="tab3" class="tab-content flex-grow p-4">
+            <!-- Mailboxes will be added here -->
+            <div id="tab3mailboxes"></div>
+            <div id="tab3footer" class="text-md text-gray-500">
+                <footer>
+                    <p>Copyright &copy; 2023 Neruthes.</p>
+                    <p>Published with GNU AGPL 3.0.</p>
+                </footer>
+            </div>
+        </div>
+
+
+        <!-- Bottom navigation bar -->
+        <div id="navbar" class="bg-white" style="
+            background: #FFFFFF;
+            box-shadow: rgba(0, 0, 0, 0.07) 0 0 0 1px;
+        ">
+            <div class="flex justify-around items-center">
+
+                <button class="tab-button p-6 flex-grow text-center text-gray-500" data-tab="tab1">Read</button>
+                <button class="tab-button p-6 flex-grow text-center text-gray-500" data-tab="tab2">Write</button>
+                <button class="tab-button p-6 flex-grow text-center text-gray-500" data-tab="tab3">Me</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,5 @@
+CryMsgBox is a simple tool for exchanging messages securely. The X25519 asymmetric encryption algorithm is used.
+
+Exchange public keys with a friend, and send encrypted messages over untrusted communication tools.
+
+The format is designed to be lightweight for convenient transportation over messaging apps.
